@@ -1,5 +1,48 @@
 \documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\title{コンピューターゼミ2018宿題}
+
+\author{張家豪}
 
 \begin{document}
- Hello World~~~~~!!!!!
+\maketitle
+\section{1章}
+\par 私達の研究室ではおもにシステムやソフトウェアの信頼性に関する研究を行っています.おもにそれらを確率論によってモデル化し、解析することで信頼性の評価を行います.
+\par  具体的には以下の様な確率過程を用いることが多いです.
+\begin{itemize}
+\item NHPP
+\item CTMC
+\end{itemize}
+\section{2章}
+\par 卒業論文や現行の作成のさいには \LaTeX を使って文章を作成します. \LaTeX は数式などを含むような文章を綺麗に作成するための言語です.
+
+\section{3章}
+\par　確率変数Xが指数分布に従うとき、その分布関数Fx(t)と密度関数fx(t)は、
+\begin{equation}
+  Fx(t) = 1 - e^{-\lambda t}
+\end{equation}
+\begin{equation}
+  fx(t) = \lambda e^{-\lambda t}
+\end{equation}
+となる.またその期待値は定義より、
+\begin{equation}
+\begin{split}
+  E[X] &= \int_0^{\infty}tfx(t) dt\nonumber\\
+       &= [(1-e^{-\lambda t}) t]^\infty_{0}-\int_0^{\infty}(1-e^{-\lambda t}) dt\nonumber\\
+       &= [(1-e^{-\lambda t}) t]^\infty_{0}-[t+\frac{1}{\lambda} e^{-\lambda t}]^\infty_{0}\nonumber\\
+       &= \frac{1}{\lambda}
+\end{split}
+\end{equation}
+となる.
+\section{4章}
+\centering
+\begin{tabular}{|c|c|c|}
+\toprule
+ 1& 2& 3\\
+\midrule
+$ \alpha $ & $\beta$ & $\gamma $\\
+\bottomrule
+\end{tabular}
+
 \end{document}
